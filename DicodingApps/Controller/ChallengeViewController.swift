@@ -29,12 +29,18 @@ class ChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addTapped(parameter: &arChallenge)
+        addTapped(parameter: &guestBookChallenge)
+        addTapped(parameter: &educationChallenge)
+        addTapped(parameter: &flutterChallenge)
+        addTapped(parameter: &webChallenge)
+        
     }
     
     func addTapped(parameter: inout UIStackView) {
         // Menambahkan gestur tap
         parameter.isUserInteractionEnabled = true
-        parameter.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(self.objectTapped)))
+        parameter.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.objectTapped)))
     }
     
     @objc func objectTapped(gesture: UIGestureRecognizer){

@@ -10,8 +10,6 @@ import UIKit
 
 class AcademiesViewController: UIViewController {
     
-    
-    @IBOutlet weak var coba: UIStackView!
     @IBOutlet weak var androidAcademy: UIStackView!
     @IBOutlet weak var unityAcademy: UIStackView!
     @IBOutlet weak var cloudAcademy: UIStackView!
@@ -29,7 +27,7 @@ class AcademiesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addTapped(parameter: &coba)
+        addTapped(parameter: &androidAcademy)
         addTapped(parameter: &unityAcademy)
         addTapped(parameter: &arvrAcademy)
         addTapped(parameter: &cloudAcademy)
@@ -38,7 +36,7 @@ class AcademiesViewController: UIViewController {
     func addTapped(parameter : inout UIStackView) {
         // Menambahkan gestur tap
         parameter.isUserInteractionEnabled = true
-        parameter.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(self.objectTapped)))
+        parameter.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.objectTapped)))
     }
     
     @objc func objectTapped(gesture:UIGestureRecognizer){

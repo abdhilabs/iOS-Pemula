@@ -365,7 +365,6 @@
                         <outlet property="androidAcademy" destination="Vh6-ee-daa" id="fL7-jF-CCO"/>
                         <outlet property="arvrAcademy" destination="PQ8-Zt-0cV" id="43x-Ei-8eJ"/>
                         <outlet property="cloudAcademy" destination="jWi-Yk-WNO" id="hQh-ej-Prc"/>
-                        <outlet property="coba" destination="Vh6-ee-daa" id="xcv-gU-6Sc"/>
                         <outlet property="unityAcademy" destination="gwe-Mu-Pwu" id="Wg4-l7-jc6"/>
                     </connections>
                 </viewController>
